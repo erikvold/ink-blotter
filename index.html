@@ -2,18 +2,13 @@
 
 	<head>
 		<script src="./lib/ink-blotter.js"></script>
+		<script src="index.js"></script>
 	</head>
 
 	<body>
 		<center>
 			<canvas id="output" width="500" height="500"></canvas>
 		</center>
-		<script>
-		window.onload = function() {
-			var out = document.getElementById('output');
-			render_inkblot(out.getContext('2d'), out.height, out.width/2, 5000);
-		};
-		</script>
 	</body>
 
 </html>
