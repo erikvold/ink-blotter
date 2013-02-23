@@ -2,5 +2,14 @@
 
 window.onload = function() {
 	var out = document.getElementById('output');
-	render_inkblot(out.getContext('2d'), out.height, out.width/2, 5000);
+	out.setAttribute('style', 'border: red solid;');
+	InkBlot({
+		context: out.getContext('2d'),
+		height: out.height,
+		width: out.width/2,
+		amount: 50000,
+		onComplete: function() {
+			out.setAttribute('style', 'border: green solid;');
+		}
+	});
 };
