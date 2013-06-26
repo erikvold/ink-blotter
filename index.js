@@ -1,6 +1,5 @@
 'use strict';
 
-window.onload = function() {
 	var out = document.getElementById('output');
 	out.setAttribute('style', 'border: red solid;');
 	InkBlot({
@@ -12,4 +11,3 @@ window.onload = function() {
 			out.setAttribute('style', 'border: green solid;');
 		}
 	});
-};
